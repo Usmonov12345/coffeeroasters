@@ -18,7 +18,7 @@ function Header() {
                             </Link>
                     </li>
                     <li className="navbar__item">
-                            <Link to="/Abaut" className='navbar__item__link'>
+                            <Link to="/About" className='navbar__item__link'>
                                 ABOUT US
                             </Link>
                     </li>

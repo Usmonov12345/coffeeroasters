@@ -1,0 +1,187 @@
+.Onecom{
+    margin: 30px 0;
+    .box{
+        background-image: url('../../../../IMG/homebac.svg');
+        background-repeat: no-repeat;
+        background-size: cover;;
+        border-radius: 10px;
+        padding: 120px  0 120px 60px;
+        &__title{
+            font-family: 'Fraunces 9pt';
+            font-weight: 900;
+            font-size: 72px;
+            color: #FEFCF7;
+            width: 40%;
+            line-height: 72px;
+        }
+        &__text{
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            padding: 5px 0;
+            color: #FEFCF7;
+            opacity: 0.8;
+            width: 26%;
+        }
+        
+        &__btn{
+             font-family: 'Fraunces 9pt';
+            background: #0E8784;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 6px;
+            padding: 10px ;
+            color: white;
+            margin: 20px 0;
+            display: block;
+            width: 15%;
+            text-align: center;
+            transition: 0.2s;
+            &:hover{
+                background: #66D2CF;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1090px) {
+    .Onecom{
+        .box{
+            &__title{
+                width: 50%;
+            }
+            
+            &__text{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .Onecom{
+        .box{
+            &__title{
+                width: 70%;
+            }
+            
+            &__text{
+                width: 50%;
+            }
+            
+            &__btn{
+                width: 30%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .Onecom{
+        .box{
+            background-image: url('../../../../IMG/homebac2.svg');
+            background-repeat: no-repeat;
+            background-size: cover;;
+            padding: 20px 0 20px 40px;
+
+            
+            &__title{
+                width: 70%;
+            }
+            
+            &__text{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 668px){
+    .Onecom{
+        .box{
+            background-image: url('../../../../IMG/homebac3.svg');
+            background-repeat: no-repeat;
+            background-size: cover;;
+            padding: 20px 0 20px 40px;
+            
+            &__title{
+                width: 70%;
+            }
+            
+            &__text{
+                width: 50%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    .Onecom{
+        .box{
+         padding: 80px 50px; 
+        
+            &__title{
+                width: 100%;
+            }
+            
+            &__text{
+                width: 50%;
+            }
+            
+            &__btn{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .Onecom{
+        .box{
+         text-align: center;
+         padding: 100px 0; 
+            &__title{
+                width: 100%;
+                 font-size: 48px;
+                line-height: 48px;
+            }
+            
+            &__text{
+                width: 90%;
+                margin: 0 auto;   
+                padding: 10px 0; 
+            }
+            
+            &__btn{
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .Onecom{
+        .box{
+        text-align: center;
+            &__title{
+                width: 100%;
+                font-size: 40px;
+                line-height: 40px;
+            }
+            
+            &__text{
+                width: 90%;
+                margin: 0 auto;   
+                padding: 10px 0; 
+            }
+            
+            &__btn{
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
