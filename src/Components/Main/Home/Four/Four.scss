@@ -1,0 +1,146 @@
+.Four{
+    padding: 40px 0;
+    
+    .card{
+        &__title{
+            font-family: 'Fraunces 9pt';
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            color: #83888F;
+            padding: 20px 0;
+        }
+        
+        &__box{
+            &__list{
+                display: flex;
+                align-items: center;
+                width: 60%;
+                border: 1px solid #FDD6BA;
+                position: relative;
+                margin: 70px 0;
+            }
+            
+            &__item1{
+                padding: 10px;
+                border-radius: 10pc;
+                border:1px solid #0E8784;
+                position: absolute;
+                background-color: white;
+                left: -1px;
+            }
+            &__item2{
+                padding: 10px;
+                border-radius: 10pc;
+                border:1px solid #0E8784;
+                position: absolute;
+                background-color: white;
+                left: 50%;
+            }
+            &__item3{
+                padding: 10px;
+                border-radius: 10pc;
+                border:1px solid #0E8784;
+                position: absolute;
+                background-color: white;
+                left: 100%;
+            }
+        }
+        
+        &__list{
+            display: flex;
+            align-items: center;    
+            gap: 120px;
+        }
+        &__link{
+                background: #0E8784;
+                border-radius: 6px;
+                margin-top: 30px;
+                display: block;
+                padding: 10px;
+                text-align: center;
+                width: 15%;
+                color: #fff;
+                transition: 0.2s;
+                &:hover{
+                    background-color:   #66D2CF;
+                }
+            }
+        &__item{
+            width: 20%;
+            
+            &__title{
+                font-family: 'Fraunces 9pt';
+                font-weight: 900;
+                font-size: 72px;
+                line-height: 72px;
+                color: #FDD6BA;
+                padding: 10px 0;
+            }
+            
+            &__text1{
+                font-family: 'Fraunces 9pt';
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 36px;
+                color: #333D4B;
+                padding-bottom: 10px;
+            }
+            
+            &__text2{
+                font-family: 'Barlow';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #333D4B;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 880px){
+    .Four{
+        .card{
+            &__link{
+                width: 22%;
+            }
+            
+            &__list{
+                gap: 20px;
+            }
+            &__item{
+                width: 27%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 688px){
+    .Four{
+        .card{
+            &__title{
+            
+                text-align: center;
+            }
+            &__box{
+                display: none;
+            }
+            
+            &__list{
+                display: block;
+                text-align: center;
+            }
+            
+            &__item{
+                margin: 0 auto;;
+                width: 60%;
+            }
+            
+            &__link{
+                margin: 0 auto;
+                width: 40%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
