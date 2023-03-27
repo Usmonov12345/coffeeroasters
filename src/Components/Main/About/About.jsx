@@ -1,4 +1,5 @@
 import React from 'react'
+import Abfourcom from './Abfourcom/Abfourcom'
 import Abonecom from './Abonecom/Abonecom'
 import Abthreecom from './Abthreecom/Abthreecom'
 import Abtwocom from './Abtwocom/Abtwocom'
@@ -9,6 +10,7 @@ function About() {
       <Abonecom/>
       <Abtwocom/>
       <Abthreecom/>
+      <Abfourcom/>
     </div>
   )
 }

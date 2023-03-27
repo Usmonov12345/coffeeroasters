@@ -1,0 +1,81 @@
+.Plonecom{
+    padding: 20px 0;
+    
+    .card{
+        padding: 120px 40px;
+        background-image: url('../../../../IMG/pl1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        &__title{
+            font-family: 'Fraunces 9pt';
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 72px;
+            color: #FEFCF7;
+        }
+        
+        &__text{
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FEFCF7;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            width: 30%;
+            padding: 20px 0;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 980px){
+    .Plonecom{
+        .card{
+            &__text{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Plonecom{
+        .card{
+            background-image: url('../../../../IMG/pl2.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            &__title{
+                font-size: 48px;
+                line-height: 48px;
+            }
+            &__text{
+                width: 50%;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 688px){
+    .Plonecom{
+        .card{
+            background-image: url('../../../../IMG/pl3.svg');
+            padding: 50px 0 50px 40px;
+            text-align: center;
+            &__title{
+                font-size: 28px;
+                line-height: 28px;
+            }
+            &__text{
+                width: 65%;
+                font-size: 15px;
+                line-height: 25px;
+                margin: 0 auto;;
+            }
+        }
+    }
+}
+

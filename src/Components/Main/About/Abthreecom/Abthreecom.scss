@@ -120,6 +120,10 @@
             &__left{
                 width: 100%;
                 text-align: center;
+                
+                &__title{
+                    font-size: 35px;
+                }
 
             }
             
@@ -159,11 +163,19 @@
     }
 }
 
-@media screen and (max-width: 688px){
+@media screen and (max-width: 588px){
     .Abthreecom{
         .card{
-            height: 600px;
+            height: 450px;
+            padding: 10px 30px;
+           &__left{
            
+             &__title{
+                    font-size: 25px;
+                    line-height: 28px;
+            }
+            
+           }
         }
     }
 }

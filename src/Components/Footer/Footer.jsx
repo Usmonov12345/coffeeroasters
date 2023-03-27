@@ -1,6 +1,9 @@
 import React from 'react'
 import imgLogo from '../../IMG/iLogo.svg'
 import {Link} from 'react-router-dom'
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import '../Footer/Footer.scss'
 function Footer() {
   return (
@@ -33,17 +36,22 @@ function Footer() {
               <ul className="foot__iconsList">
                 <li className="foot__iconsItem">
                   <Link to="/">
-                    <i class="fa-brands fa-square-facebook foot__iconsItem__icon"></i>
+                    <i class="foot__iconsItem__icon">
+                      <FacebookIcon/>
+                    </i>
                   </Link>
                 </li>
                 <li className="foot__iconsItem">
                   <Link to="/">
-                      <i class="fa-brands fa-twitter foot__iconsItem__icon"></i>
+                      <i class="  foot__iconsItem__icon" ><TwitterIcon/></i>
+                      
                   </Link>
                 </li>
                 <li className="foot__iconsItem">
                   <Link to="/">
-                    <i class="fa-brands fa-instagram foot__iconsItem__icon"></i>
+                    <i class="foot__iconsItem__icon">
+                      <InstagramIcon/>
+                    </i>
                   </Link>
                 </li>
               </ul>
