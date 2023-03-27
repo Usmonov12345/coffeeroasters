@@ -1,0 +1,160 @@
+.Abthreecom{
+    padding: 160px 0;
+    
+    .card{
+        background-color: #333D4B;
+        padding: 140px 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        &__left{
+            width: 55%;
+            
+            &__title{
+                font-family: 'Fraunces 9pt';
+                font-weight: 900;
+                font-size: 40px;
+                line-height: 48px;
+                color: #FEFCF7;
+                padding-bottom: 20px;
+            }
+            
+            &__text{
+                font-family: 'Barlow';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FEFCF7;
+                mix-blend-mode: normal;
+                opacity: 0.8;
+            }
+            
+        }
+          
+
+        &__reght{
+            width: 40%;
+            position: relative;
+            &__img1{
+                width: 100%;
+                position: absolute;
+                bottom: -140px;
+                border-radius:  10px;
+            }
+            &__img2{
+                display: none;
+            }
+            &__img3{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Abthreecom{
+        .card{
+            padding: 80px 30px;
+            &__left{
+                width: 45%;
+            }
+            
+            &__reght{
+                width: 50%;
+                
+                &__img1{
+                    bottom: -160px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Abthreecom{
+        .card{
+            padding: 60px 30px;
+            &__left{
+                width: 40%;
+            }
+            
+            &__reght{
+                width: 55%;
+                
+                &__img1{
+                    bottom: -140px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Abthreecom{
+        .card{
+            padding: 30px;
+            &__left{
+                width: 40%;
+            }
+            
+            &__reght{
+                width: 55%;
+                
+                &__img1{
+                    bottom: -140px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Abthreecom{
+        margin: 100px 0;
+        .card{
+            padding: 50px 60px;
+            flex-direction: column-reverse;
+            height: 350px;
+            &__left{
+                width: 100%;
+                text-align: center;
+
+            }
+            
+            &__reght{
+                width: 100%;
+                padding: 40px 0;
+
+               &__img1{
+                display: none;
+               }
+               
+               &__img2{
+                display: block;
+                width: 100%;
+                border-radius: 10px;
+               }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 688px){
+    .Abthreecom{
+        .card{
+            height: 500px;
+            &__reght{
+                &__img2{
+                    display: none;
+                }
+                &__img3{
+                    display: block;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
