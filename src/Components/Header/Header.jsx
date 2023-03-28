@@ -1,15 +1,47 @@
 import React from 'react'
 import '../Header/Header.scss'
 import logo from '../../IMG/log.svg'
-import {Link} from 'react-router-dom'
+import {Link,NavLink} from 'react-router-dom'
+import { useState } from 'react'
+import logg from '../../IMG/iLogo.svg'
+import { Button } from '@mui/material'
 function Header() {
+
+         const [btnState, setBtnState] = useState(false)
+    
+         let List = () => {
+            setBtnState(  btnState => !btnState)
+         }
          
+         let toggleClassChek =  btnState ? 'actives' : null;
 
   return (
     <div className='Header'>
         <div className="container">
         
- 
+                <div className={`acol ${toggleClassChek}`}>
+                    <Link to="/">
+                        <img src={logg} alt="" className='actives__logo' />
+                            
+                    </Link>
+                    
+                    
+                     <Button variant="text" className='actives__btn'>
+                   <Link to="/"  className='actives__link'>
+                      HOME
+                    </Link>
+                    </Button> <Button variant="text" className='actives__btn'>
+                    <Link to="/About" className='actives__link'>
+                        ABOUT US
+                    </Link>
+                    </Button>
+                    <Button variant="text" className='actives__btn'>
+                    <Link to="/Create" className='actives__link'>
+                         CREATE YOUR PLAN
+                    </Link>
+                    </Button>
+                  
+                </div>
             
             <div className="navbar">
                 <Link to="/" className='navbar__linkLogo'>
@@ -33,8 +65,10 @@ function Header() {
                             </Link>
                     </li>
                 </ul>
+                <Button onClick={() => List()} className="navbar__bur">
+                    <i class="fa fa-list navbar__bur" ></i>
+                </Button>
                 
-                <i class="fa fa-list navbar__bur"></i>
             </div>
         </div>
     </div>
