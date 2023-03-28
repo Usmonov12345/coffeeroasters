@@ -5,6 +5,10 @@ function Right() {
   return (
     <div>
         <Caef/>
+        <Caef/>
+        <Caef/>
+        <Caef/>
+        <Caef/>
     </div>
   )
 }
