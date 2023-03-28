@@ -1,0 +1,47 @@
+.Caef{
+    padding: 20px 0;
+    
+    &__title{
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #83888F;
+        
+    }
+    
+    &__icon{
+        font-size: 20px;
+        color: #0E8784;
+        margin-left: 20px;
+    }
+    
+    .list{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+        &__item{
+            padding: 40px;
+            background-color: #F4F1EB;
+            border-radius: 10px;
+            transition: 0.3s;
+            height: 200px;
+            
+            &:hover{
+                background-color: #FDD6BA;
+            }
+        }
+         &__item1{
+            padding: 40px 20px;
+            background-color:#0E8784;
+            height: 200px;
+            border-radius: 10px;
+            transition: 0.3s;
+            
+            &:hover{
+                background-color: #FDD6BA;
+            }
+        }
+    }
+}
