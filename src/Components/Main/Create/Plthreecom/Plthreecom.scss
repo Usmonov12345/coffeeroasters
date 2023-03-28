@@ -1,0 +1,135 @@
+.Plthreecom{
+    padding: 50px 0;
+    
+    .card{
+        border-radius: 10px;
+        background-color: #333D4B;
+        padding: 40px ;
+        &__list{
+            width: 70%;
+            position: relative;
+            border:  1px solid #FDD6BA;
+            margin: 40px 0;
+        }
+        
+        &__item1{
+            position: absolute;
+            padding: 10px;
+            background-color:   #333D4B;
+            border-radius: 10pc;
+            border: 1px solid #0E8784;
+            bottom: -10px;
+            left: -1px ;
+        }
+        &__item2{
+            position: absolute;
+            padding: 10px;
+            background-color:   #333D4B;
+            border-radius: 10pc;
+            border: 1px solid #0E8784;
+            right: 50%;
+            bottom: -10px;
+
+        }
+        &__item3{
+            position: absolute;
+            padding: 10px;
+            background-color:   #333D4B;
+            border-radius: 10pc;
+            border: 1px solid #0E8784;
+            bottom: -10px;
+            right: -1px;
+        }
+        
+        &__lisT{
+            display: flex;
+            align-items: center;
+            gap: 100px;
+        }
+        
+        &__iteM{
+            width: 22%;
+            
+            &__title{
+                font-family: 'Fraunces 9pt';
+                font-weight: 900;
+                font-size: 72px;
+                line-height: 72px;
+                color: #FDD6BA;
+                padding: 5px 0;
+            }
+            
+            &__text1{
+                font-family: 'Fraunces 9pt';
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 36px;
+                color: #FEFCF7;
+            }
+            &__text2{
+                font-family: 'Barlow';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FEFCF7;
+                padding: 5px 0;
+
+            }
+            
+        }
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    .Plthreecom{
+        .card{
+            &__lisT{
+                gap: 50px;
+            }
+            &__iteM{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Plthreecom{
+        
+        .card{
+            padding: 20px 10px;
+            &__lisT{
+                gap: 50px;
+            }
+            &__iteM{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 688px){
+    .Plthreecom{
+        
+        .card{
+            &__list{
+                display: none;
+            }
+            padding: 20px 30px;
+            &__lisT{
+            flex-direction: column;
+            }
+            &__iteM{
+                width: 100%;
+                text-align: center;
+                
+                &__text2{
+                    width: 70%;
+                    margin: 0 auto;
+                    
+                }
+            }
+        }
+    }
+}
